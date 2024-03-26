@@ -1,0 +1,17 @@
+<div class="text-white">
+    <h1>Consumiendo una API externa</h1>
+    <p>En esta parte estoy consumiento una api de rick and morty, en la cual hago una peticion y me trae los registros de personajes y como no conozco los parametros del modelo de esta api, lo primero que hice fue mostrar todo el arreglo en consola y apartir de eso saque los campos necesarios para mostrarlo en mi portafolio.</p>
+</div>
+<div class="text-white bg-gradient">
+    <h3>Data de la Api</h3>
+    <ul *ngFor="let api of data">
+        <li >{{api.id}}</li>
+        <li>{{api.name}}</li>
+        <li>{{api.status}}</li>
+        <li>{{api.species}}</li>
+        <li>{{api.gender}}</li>
+        <li>{{api.url}}</li>
+        <li>{{api.created}}</li>
+        <img src="{{api.image}}" height="50" alt="">
+    </ul>
+</div>

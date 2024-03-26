@@ -1,0 +1,25 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html> -->
+<div class="row">
+  <div class="col-md-3 " *ngFor="let proyectos of Proyectoss">
+    <div class="card p-3 mb-2 bg-dark bg-gradient text-white" style="width: 18rem; margin: 2rem;">
+      <div class="card-body p-3 mb-2 bg-dark bg-gradient text-white">
+        <h5 class="card-title">{{proyectos.nombre}}</h5>
+        <p class="card-text">{{proyectos.descripcion}}</p>
+        <p>{{proyectos.tecnologias}}</p>
+        <p>{{proyectos.tipo}}</p>
+        <a href="{{proyectos.gitHub}}" class="btn btn-primary">Go to my GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
